@@ -1,147 +1,71 @@
-<style>
-	@charset "utf-8";
-	
-	* {
-	padding:0; 
-	margin:0; 
-	border:0;
-}
-body {
-   background: #d5d5d5;
-	font-family:trebuchet MS;
-	color:#6B6B6B;
-   border: 0 none;
-   margin: 0;
-	font-size:13px;
-   padding: 0;
-}
-#wrapper{
-  padding: 60px 0px;
-}
-.container{}
-.row{}
-.circle{
-  background: #ffffff;
-  padding: 35px;
-  text-align: center;
-  height: 250px;
-  width: 250px;
-    
-    transition: all 0.5s;
-  -moz-transition: all 0.5s; /* Firefox 4 */
-  -webkit-transition: all 0.5s; /* Safari and Chrome */
-  -o-transition: all 0.5s; /* Opera */
-}
-.circle h4{
-  margin: 0;
-  padding: 0;
-}
-.circle p{}
-.circle span{}
-.circle span.icon{
-}
-.circle span.icon i{
-  font-size: 48px;
-}
-.circle span.price-large{
-  font-size: 68px
-}
-.price-small{
-  font-size: 24px 
-}
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
 
-.c1:hover{
-  background: #39b3d7;
-  color: #ffffff;
-}
-.c1 .blue{
-  color: #39b3d7;
-}
-.c1:hover .blue{
-  color: #ffffff;
-}
-
-.c2:hover{
-  background: #ed9c28;
-  color: #ffffff;
-}
-.c2 .yellow{
-  color: #ed9c28;
-}
-.c2:hover .yellow{
-  color: #ffffff;
-}
-
-.c3:hover{
-  background: #47a447;
-  color: #ffffff;
-}
-.c3 .green{
-  color: #47a447;
-}
-.c3:hover .green{
-  color: #ffffff;
-}
-
-.c4:hover{
-  background: #d2322d;
-  color: #ffffff;
-}
-.c4 .red{
-  color: #d2322d;
-}
-.c4:hover .red{
-  color: #ffffff;
-}
-</style>
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
-<div id="wrapper">
-    <div class="container">
-        <div class="row">
-              <div class="col-md-3">
-                  <div class="circle c1 img-circle">
-                      <h4 class="blue">Basic Plan</h4>
-                      <span class="icon blue"><i class="fa fa-eur"></i></span>
-                      <span class="price-large blue">8</span>
-                      <span class="price-small">,90</span>
-                      <p>Great for small Business</p>
-                      <button type="button" class="btn btn-info">Choose</button>
-                  </div>
-              </div><!-- .Col-md-3 ends here -->
-          
-              <div class="col-md-3">
-                  <div class="circle c2 img-circle">
-                      <h4 class="yellow">Starter Plan</h4>
-                      <span class="icon yellow"><i class="fa fa-eur"></i></span>
-                      <span class="price-large yellow">24</span>
-                      <span class="price-small">,90</span>
-                      <p>Great for small Business</p>
-                      <button type="button" class="btn btn-warning">Choose</button>
-                  </div>
-              </div><!-- .Col-md-3 ends here -->
-          
-          <div class="col-md-3">
-                  <div class="circle c3 img-circle">
-                      <h4 class="green">Premier Plan</h4>
-                      <span class="icon green"><i class="fa fa-eur"></i></span>
-                      <span class="price-large green">54</span>
-                      <span class="price-small">,90</span>
-                      <p>Great for small Business</p>
-                      <button type="button" class="btn btn-success">Choose</button>
-                  </div>
-              </div><!-- .Col-md-3 ends here -->
-          
-          <div class="col-md-3">
-                  <div class="circle c4 img-circle">
-                      <h4 class="red">Deluxe Plan</h4>
-                      <span class="icon red"><i class="fa fa-eur"></i></span>
-                      <span class="price-large red">8</span>
-                      <span class="price-small">,90</span>
-                      <p>Great for small Business</p>
-                      <button type="button" class="btn btn-danger">Choose</button>
-                  </div>
-              </div><!-- .Col-md-3 ends here -->
-        </div><!-- .Container ends here -->
-    </div><!-- .Row ends here -->
-</div>
+<section class="py-5 bg-primary">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="card bg-success mb-5 mb-lg-0 rounded-lg shadow">
+					<div class="card-header">
+						<h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
+						<h6 class="h1 text-white text-center">$0<span class="h6 text-white-50">/month</span></h6>
+					</div>
+					<div class="card-body bg-light rounded-bottom">
+						<ul class="list-unstyled mb-4">
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-success"></i></span>Single User</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-success"></i></span>5GB Storage</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-success"></i></span>Unlimited Public Projects</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-success"></i></span>Community Access</li>
+							<li class="text-muted mb-3"><span class="mr-3"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+							<li class="text-muted mb-3"><span class="mr-3"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+							<li class="text-muted mb-3"><span class="mr-3"><i class="fas fa-times"></i></span>Free Subdomain</li>
+							<li class="text-muted mb-3"><span class="mr-3"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+						</ul>
+						<a href="#" class="btn btn-block btn-primary text-uppercase rounded-lg py-3">Buy now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card bg-warning mb-5 mb-lg-0 rounded-lg shadow">
+					<div class="card-header">
+						<h5 class="card-title text-white-50 text-uppercase text-center">Plus</h5>
+						<h6 class="h1 text-white text-center">$9<span class="h6 text-white-50">/month</span></h6>
+					</div>
+					<div class="card-body bg-light rounded-bottom">
+						<ul class="list-unstyled mb-4">
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span><strong>5 Users</strong></li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>50GB Storage</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>Unlimited Public Projects</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>Community Access</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>Unlimited Private Projects</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>Dedicated Phone Support</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-warning"></i></span>Free Subdomain</li>
+							<li class="text-muted mb-3"><span class="mr-3"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+						</ul>
+						<a href="#" class="btn btn-block btn-primary text-uppercase rounded-lg py-3">Buy now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card bg-danger mb-5 mb-lg-0 rounded-lg shadow">
+					<div class="card-header">
+						<h5 class="card-title text-white-50 text-uppercase text-center">Pro</h5>
+						<h6 class="h1 text-white text-center">$29<span class="h6 text-white-50">/month</span></h6>
+					</div>
+					<div class="card-body bg-light rounded-bottom">
+						<ul class="list-unstyled mb-4">
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span><strong>Unlimited Users</strong></li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>150GB Storage</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>Unlimited Public Projects</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>Community Access</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>Unlimited Private Projects</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>Dedicated Phone Support</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+							<li class="mb-3"><span class="mr-3"><i class="fas fa-check text-danger"></i></span>Monthly Status Reports</li>
+						</ul>
+						<a href="#" class="btn btn-block btn-primary text-uppercase rounded-lg py-3">Buy now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
