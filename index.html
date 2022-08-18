@@ -1,688 +1,401 @@
 <style>
-   @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+body {font-family: 'Heebo', sans-serif; font-weight: normal; font-style: normal; font-size: 15px; line-height: 1.5; color:#5f5f5f; letter-spacing: 1px;}
 
-:root {
-	font-size: 20px;
-  --blue: #598bfd;
-  --indigo: #331177;
-  --purple: #8e44ad;
-  --red: #e74c3c;
-  --orange: #f39c12;
-  --yellow: #F4D03F;
-  --green: #2ecc71;
-  --teal: #27ae60;
-  --cyan: #16a085;
-  --white: #fff;
-  --gray: #bdc3c7;
-  --gray-light: #d9dcde;
-  --gray-dark: #95a5a6;
-  --primary: #03f1c5;
-  --secondary: #6c757d;
-  --success: #54d98c;
-  --info: #1abc9c;
-  --warning: #e67e22;
-  --danger: #c0392b;
-  --lighter: #f6f5f8;
-  --light: #f0eff3;
-	--light-2: #f0eff3;
-	--light-3: #efedf5;
-	--light-4: #e0ddec;
-  --dark: #343a40;
-  --dark-blue: #1f2029;
-  --darker: #141414;
-  --black: #080808;
-}
-body{
-  font-family: 'Roboto', sans-serif;
-	font-weight: 400;	
-	font-size: 16px;
-	line-height: 1.65;
-	letter-spacing: 0.2px;
-	color: var(--gray-dark);
-	background-color: var(--white);
-	overflow-x: hidden;
-  transition: all 250ms linear;
-}
-p{
-  font-family: 'Roboto', sans-serif;
-	font-weight: 400;	
-	font-size: 16px;
-	line-height: 1.65;
-  margin-bottom: 0.5rem;
-	letter-spacing: 0.2px;
-  color: var(--gray-dark);
-  transition: all 250ms linear;
-}
-.lead{	
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 1.65;
-  transition: all 250ms linear;
-}
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6{
-  font-family: 'Muli', sans-serif;
-	margin-bottom: 0.5rem;
-	font-weight: 800;
-	line-height: 1.25;
-	letter-spacing: 1px;
-	color: var(--dark-blue);
-  transition: all 250ms linear;
-}
-h1, .h1 {
-	font-size: 48px;
-	line-height: 60px;
-}
-h2, .h2 {
-	font-size: 36px;
-	line-height: 46px;
-}
-h3, .h3 {
-	font-size: 30px;
-	line-height: 40px;
-}
-h4, .h4 {
-	font-size: 24px;
-	line-height: 32px;
-}
-h5, .h5 {
-	font-size: 20px;
-	line-height: 28px;
-}
-h6, .h6 {
-	font-size: 17px;
-	line-height: 24px;
-}
-::selection {
-	color: var(--white);
-	background-color: var(--primary);
-}
-::-moz-selection {
-	color: var(--white);
-	background-color: var(--primary);
-}
-mark{
-	color: var(--white);
-	background-color: var(--primary);
-}
-a:hover {
-	text-decoration: none;
-}
-
-/* #Size
-================================================== */
-
-.size-12 {
-    font-size: 12px;
-}
-.size-13 {
-    font-size: 13px;
-}
-.size-14 {
-    font-size: 14px;
-}
-.size-15 {
-    font-size: 15px;
-}
-.size-16 {
-    font-size: 16px;
-}
-.size-17 {
-    font-size: 17px;
-}
-.size-18 {
-    font-size: 18px;
-}
-.size-19 {
-    font-size: 19px;
-}
-.size-20 {
-    font-size: 20px;
-}
-.size-21 {
-    font-size: 21px;
-}
-.size-22 {
-    font-size: 22px;
-}
-.size-23 {
-    font-size: 23px;
-}
-.size-24 {
-    font-size: 24px;
-}
-.size-25 {
-    font-size: 25px;
-}
-.size-26 {
-    font-size: 26px;
-}
-.size-27 {
-    font-size: 27px;
-}
-.size-28 {
-    font-size: 28px;
-}
-.size-29 {
-    font-size: 29px;
-}
-.size-30 {
-    font-size: 30px;
-}
-.size-40 {
-    font-size: 40px;
-}
-.size-50 {
-    font-size: 50px;
-}
-
-
-/* #Colors
-================================================== */
-
-.color-blue {
-    color: var(--blue);
-}
-.color-indigo {
-    color: var(--indigo);
-}
-.color-purple {
-    color: var(--purple);
-}
-.color-red {
-    color: var(--red);
-}
-.color-orange {
-    color: var(--orange);
-}
-.color-yellow {
-    color: var(--yellow);
-}
-.color-green {
-    color: var(--green);
-}
-.color-teal {
-    color: var(--teal);
-}
-.color-cyan {
-    color: var(--cyan);
-}
-.color-white {
-    color: var(--white);
-}
-.color-gray {
-    color: var(--gray);
-}
-.color-gray-light {
-    color: var(--gray-light);
-}
-.color-gray-dark {
-    color: var(--gray-dark);
-}
-.color-primary {
-    color: var(--primary);
-}
-.color-secondary {
-    color: var(--secondary);
-}
-.color-success {
-    color: var(--success);
-}
-.color-info {
-    color: var(--info);
-}
-.color-warning {
-    color: var(--warning);
-}
-.color-danger {
-    color: var(--danger);
-}
-.color-lighter {
-    color: var(--lighter);
-}
-.color-light {
-    color: var(--light-2);
-}
-.color-light-2 {
-    color: var(--light-3);
-}
-.color-dark {
-    color: var(--dark);
-}
-.color-darker {
-    color: var(--darker);
-}
-.color-dark-blue {
-    color: var(--dark-blue);
-}
-.color-black {
-    color: var(--black);
-}
-.bg-blue {
-    background-color: var(--blue);
-}
-.bg-indigo {
-    background-color: var(--indigo);
-}
-.bg-purple {
-    background-color: var(--purple);
-}
-.bg-red {
-    background-color: var(--red);
-}
-.bg-orange {
-    background-color: var(--orange);
-}
-.bg-yellow {
-    background-color: var(--yellow);
-}
-.bg-green {
-    background-color: var(--green);
-}
-.bg-teal {
-    background-color: var(--teal);
-}
-.bg-cyan {
-    background-color: var(--cyan);
-}
-.bg-white {
-    background-color: var(--white);
-}
-.bg-gray {
-    background-color: var(--gray);
-}
-.bg-gray-light {
-    background-color: var(--gray-light);
-}
-.bg-gray-dark {
-    background-color: var(--gray-dark);
-}
-.bg-primary {
-    background-color: var(--primary) !important;
-}
-.bg-secondary {
-    background-color: var(--secondary) !important;
-}
-.bg-success {
-    background-color: var(--success) !important;
-}
-.bg-info {
-    background-color: var(--info) !important;
-}
-.bg-warning {
-    background-color: var(--warning) !important;
-}
-.bg-danger {
-    background-color: var(--danger) !important;
-}
-.bg-lighter {
-    background-color: var(--lighter) !important;
-}
-.bg-light {
-    background-color: var(--light-2) !important;
-}
-.bg-light-2 {
-    background-color: var(--light-2);
-}
-.bg-light-3 {
-    background-color: var(--light-3) !important;
-}
-.bg-dark {
-    background-color: var(--dark) !important;
-}
-.bg-dark-blue {
-    background-color: var(--dark-blue) !important;
-}
-.bg-darker {
-    background-color: var(--darker) !important;
-}
-.bg-black {
-    background-color: var(--black) !important;
-}
-.bg-transparent {
-    background-color: transparent !important;
-}
-
-/* #Elements
-================================================== */
-
-.section {
-  position: relative;
-	width: 100%;
-	display: block;
-}
-.section-1400{
-  position: relative;
-	width: 100%;
-	max-width: 1430px;
-	display: block;
-	margin: 0 auto;
-  z-index: 3 !important;
-}
-.over-hide {
-  overflow: hidden;
-}
-.padding-top-bottom-120 {
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-.padding-top-120 {
-	padding-top: 120px;
-}
-.padding-bottom-120 {
-	padding-bottom: 120px;
-}
-.border-4 {
-	border-radius: 4px;
-}
-.title-text-top {
-	position: relative;
-	display: inline-block;
-}
-.title-text-top::before {
-	position: absolute;
-	display: block;
-	content: '';
-	left: 0;
-	bottom: -3px;
-	height: 2px;
-	width: 100%;
-	background-color: var(--primary);
-	z-index: 2;
-}
-.btn{  
-	height: 48px;
-	font-size: 16px;
-	font-weight: 500;
-	-webkit-transition: all 200ms linear !important;
-  transition: all 200ms linear !important;
-	padding: 0 35px;
-	letter-spacing: 0.2px;
-	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	-moz-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	-ms-flex-pack: center;
-	text-align: center;
-	border: none;
-}
-.btn-fluid{
-	width: 100%;
-}
-.btn-pricing{
-	color: var(--white);
-  background-color: var(--success);
-	height: 160px;
-	border-radius: 0;
-}
-.btn-pricing:active,
-.btn-pricing:focus,
-.btn-pricing:hover{
-	color: var(--white) !important;
-  background-color: var(--dark-blue) !important;
-}
-.btn-pricing-2{
-	color: var(--white);
-    background-color: var(--orange);
-	height: 160px;
-	border-radius: 0;
-}
-.btn-pricing-2:active,
-.btn-pricing-2:focus,
-.btn-pricing-2:hover{
-	color: var(--white) !important;
-    background-color: var(--dark) !important;
-}
-.switch-pricing {
-	position: relative;
-	cursor: pointer;
-	height: 50px;
-	display: inline-block;
-	width: 200px;
-	border-radius: 4px;
-	border: none;
-	overflow: hidden;
-	display: inline-block;
-	background-color: var(--light-2);
-  transition: all 250ms linear;
-}
-input[type="checkbox"]:checked + .switch-pricing {
-}
-.form-group input[type="checkbox"] {
-	visibility: hidden;
-	display: none;
-}
-.switch-pricing:after,
-.switch-pricing:before {
-	position: absolute;
-  font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	content: 'Monthly';
-	line-height: 50px;
-	font-size: 16px;
-	color: var(--white);
-	text-align: center;
-	left: 0;
-	top: 0;
-	background-color: var(--primary);
-	width: 100px;
-	height: 50px;
-  transition: all 250ms linear;
-}
-.switch-pricing:after {
-	content: 'Yearly';
-	left: 100px;
-	color: var(--dark);
-	background-color: transparent;
-}
-input[type="checkbox"]:checked + .switch-pricing:before {
-	color: var(--dark);
-	background-color: transparent;
-}
-input[type="checkbox"]:checked + .switch-pricing:after {
-	color: var(--white);
-	background-color: var(--primary);
-}
-.pricing-opt-2 {
-	position: absolute;
-	left: 15px;
-	top: 0;
-	display: block;
-	width: calc(100% - 30px);
-	z-index: 2;
-  transition: all 250ms linear;
-	opacity: 0;
-	pointer-events: none;
-}
-body.pricing-opt-body-2 .pricing-opt-2 {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-body.pricing-opt-body-2 {
-	background-color: var(--dark-blue);
-}
-body.pricing-opt-body-2 h3,
-body.pricing-opt-body-2 h5 {
-	color: var(--white);
-}
-body.pricing-opt-body-2 p {
-	color: var(--light-2);
-}
-body.pricing-opt-body-2 .bg-light-2 {
-	background-color: var(--black);
-}
-
-body.pricing-opt-body-2 .switch-pricing {
-	background-color: var(--black);
-  transition: all 250ms linear;
-}
-body.pricing-opt-body-2 .switch-pricing:before {
-	color: var(--white)!important;
-  transition: all 250ms linear;
-}
-
-body.pricing-opt-body-2 .price-tab-1 {
-	opacity: 0 !important;
-}
-
-.left-off {
-  position: absolute;
-  left: 20px;
-  top: -20px;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-	margin-bottom: 0.5rem;
-	font-weight: 900;
-  font-size: 54px;
-  text-align: right;
-	line-height: 1;
-	letter-spacing: 0;
-	color: var(--dark);
-  z-index: 4;
-  transition: all 350ms linear;
-}
-body.pricing-opt-body-2 .left-off {
-  top: -50px;
-	opacity: 0;
-}
-.right-off {
-  position: absolute;
-  left: 20px;
-  top: -50px;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-	margin-bottom: 0.5rem;
-	font-weight: 900;
-  font-size: 54px;
-  text-align: right;
-	line-height: 1;
-	letter-spacing: 0;
-	color: var(--light-4);
-  opacity: 0;
-  z-index: 4;
-  transition: all 350ms linear;
-}
-body.pricing-opt-body-2 .right-off {
-  top: -20px;
-	opacity: 1;
-}
-@media (max-width: 991px) { 
-  .left-off {
+h2,h4 {
+    font-family: 'Dosis', sans-serif;
+	font-style: normal;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1c1d3e;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     left: 0;
-    text-align: center;
+    opacity: 0.5;
+}
+.pos-r {
+    position: relative;
+}
+section{padding: 80px 0;}
+.section-title{margin-bottom:50px; position: relative;}
+.section-title p{font-size: 16px;}
+.title-effect {width: 50px; height: 50px; top: 0; position: absolute; left: 0; opacity: 0.5; animation: rotation 12.8s steps(1) 0s infinite;}
+.text-center .title-effect{left: 50%; margin-left: -25px;}
+.text-center .section-title h6{padding: 15px 0;}
+
+.title-effect .bar {background: #2575fc;}
+.title-effect .bar-top {width: 100%; height: 7px; position: absolute; top: 0; left: 0; transform-origin: left top; transform: scale(0, 1); animation: bar-top 3.2s linear 0s infinite;}
+.title-effect .bar-right {width: 7px; height: 100%; position: absolute; top: 0; right: 0; transform-origin: left top; transform: scale(1, 0); animation: bar-right 3.2s linear 0s infinite;}
+.title-effect .bar-bottom {width: 100%; height: 7px; position: absolute; right: 0; bottom: 0; transform-origin: right top; transform: scale(0, 1); animation: bar-bottom 3.2s linear 0s infinite;}
+.title-effect .bar-left {width: 7px; height: 100%; position: absolute; left: 0; bottom: 0; transform-origin: left bottom; transform: scale(1, 0); animation: bar-left 3.2s linear 0s infinite;}
+
+.title {position: relative; color: #1c1d3e; margin-bottom: 0;}
+.section-title h2{margin-bottom: 15px;}
+
+
+/*--rotation--*/
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-  .right-off {
-    left: 0;
-    text-align: center;
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
+@keyframes bar-top {
+  0% {
+    transform: scale(0, 1);
+  }
+  12.5% {
+    transform: scale(1, 1);
+  }
+  87.5% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+@keyframes bar-right {
+  0% {
+    transform: scale(1, 0);
+  }
+  12.5% {
+    transform: scale(1, 0);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  87.5% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 0);
+  }
+}
+@keyframes bar-bottom {
+  0% {
+    transform: scale(0, 1);
+  }
+  25% {
+    transform: scale(0, 1);
+  }
+  37.5% {
+    transform: scale(1, 1);
+  }
+  62.5% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+@keyframes bar-left {
+  0% {
+    transform: scale(1, 0);
+  }
+  37.5% {
+    transform: scale(1, 0);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  62.5% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 0);
+  }
+}
+
+
+/* ------------------------
+    Price Table
+------------------------*/
+.price-table{padding: 50px 30px; border-radius: 7px; overflow: hidden; position: relative; background: #ffffff; text-align: center;-webkit-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+    box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;}
+.price-title{text-transform: uppercase; font-weight: 700; color: #2575fc;}
+.price-header{position: relative; z-index: 9;}
+.price-value {display: inline-block; width: 100%;}
+.price-value h2 {font-size: 60px; line-height: 60px; font-weight: 800; color: #1c1d3e; margin-bottom: 0; position: relative; display: inline-block;}
+.price-value h2 span {font-size: 26px; left: -15px; line-height: 24px; margin: 0; position: absolute; top: 10px; color: #5f5f5f; font-weight: normal;}
+.price-value span {margin: 15px 0; display: block;}
+.price-list ul li {position: relative; display: block; margin-bottom: 20px;}
+.price-list ul li:last-child{margin-bottom: 0;}
+.dark-bg .price-list ul li{color: rgba(255,255,255,0.8);}
+.price-list ul li:last-child{margin-right: 0;}
+.price-list li i {color: #2575fc; line-height: 20px; font-size: 20px;}
+
+.price-inside {font-size: 80px; line-height: 80px; position: absolute; left: 85%; top: 50%; transform: translateX(-50%) translateY(-50%) rotate(-90deg); font-weight: 900; color: rgba(0,0,0,0.040);}
+.price-table::before {background: #fafaff; content: ""; height: 300px; left: -25%; position: absolute; top: -10%; transform: rotate(-10deg); width: 150%;}
+.price-table.active::before{transform: rotate(10deg);}
+
+.price-table.style-2{background: rgba(255,255,255,0.020); box-shadow: none;}
+.price-table.style-2::before {background: rgba(255,255,255,0.030); top: 50%; transform: translateY(-50%) rotate(-10deg);}
+.price-table.style-2 .price-title{color:#005bea;}
+.price-table.style-3.active .price-title{color:#ffffff;}
+.price-table.style-2 .price-value h2, .price-table.style-3.active .price-value h2{color: #ffffff;}
+.price-table.style-2 .price-list{margin-top: 20px;}
+.price-table.style-2.active::before{transform: rotate(0);}
+.price-table.style-2 .price-inside{color: rgba(255,255,255,0.040);}
+.price-table.style-2 .btn, .price-table.style-3.active .btn{-webkit-box-shadow: 0 10px 20px rgba(255,255,255,0.1);}
+
+.price-table.active{padding: 70px 30px;}
+.price-table.style-3.active{background: #2575fc; color: #ffffff;}
+.price-table.active .price-value h2 span{color: #ffffff;}
+.price-table.style-3:before, .price-table.style-4:before{display: none;}
+.price-table.style-3 .price-list{margin-top: 25px;}
+
+.price-table.style-4 .price-list{margin: 25px 0;}
+.price-table.style-4 h3{text-transform: capitalize;}
+
+.btn{padding: 12px 25px; font-weight: 500; background: none; color: #1c1d3e; overflow: hidden; border-radius: 7px; border: none; position: relative; z-index: 9; transition: all 0.5s ease-in-out 0s; box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);}
+.btn.btn-theme{background: rgb(0,91,234); background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(37,117,252,1) 80%);  color: #ffffff;}
+.btn.focus, .btn:focus{box-shadow: none;}
+.btn:hover {transform: translateY(-3px);}
+.btn.btn-circle{border-radius: 30px;}
+
+.btn span {display: inline-block; opacity: 0; -webkit-transform: translate3d(10, 10px, 0); -moz-transform: translate3d(10, 10px, 0); -ms-transform: translate3d(10, 10px, 0); -o-transform: translate3d(10, 10px, 0); transform: translate3d(10, 10px, 0);
+-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); -moz-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); -o-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+ .price-table:hover{-webkit-box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.5); -moz-box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.5); box-shadow: 0px 20px 50px 0px rgba(153, 153, 153, 0.5);}
+
+.btn::before {content: attr(data-text); height: 100%; left: 0; position: absolute; top: 0; transition: all 0.3s cubic-bezier(0.75, 0, 0.125, 1) 0s; width: 100%; padding: 12px 0;}
+.btn:hover:before {opacity: 0; -webkit-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0);}
+.btn:hover span{opacity:1; -webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0)}
+.btn:hover span:nth-child(1){-webkit-transition-delay:0.01s; -moz-transition-delay:0.01s; -o-transition-delay:0.01s; transition-delay:0.01s}
+.btn:hover span:nth-child(2){-webkit-transition-delay:0.05s; -moz-transition-delay:0.05s; -o-transition-delay:0.05s; transition-delay:0.05s}
+.btn:hover span:nth-child(3){-webkit-transition-delay:0.1s; -moz-transition-delay:0.1s; -o-transition-delay:0.1s; transition-delay:0.1s}
+.btn:hover span:nth-child(4){-webkit-transition-delay:0.15s; -moz-transition-delay:0.15s; -o-transition-delay:0.15s; transition-delay:0.15s}
+.btn:hover span:nth-child(5){-webkit-transition-delay:0.2s; -moz-transition-delay:0.2s; -o-transition-delay:0.2s; transition-delay:0.2s}
+.btn:hover span:nth-child(6){-webkit-transition-delay:0.25s; -moz-transition-delay:0.25s; -o-transition-delay:0.25s; transition-delay:0.25s}
+.btn:hover span:nth-child(7){-webkit-transition-delay:0.3s; -moz-transition-delay:0.3s; -o-transition-delay:0.3s; transition-delay:0.3s}
+.btn:hover span:nth-child(8){-webkit-transition-delay:0.35s;-moz-transition-delay:0.35s; -o-transition-delay:0.35s; transition-delay:0.35s}
+.btn:hover span:nth-child(9){-webkit-transition-delay:0.4s; -moz-transition-delay:0.4s; -o-transition-delay:0.4s; transition-delay:0.4s}
+.btn:hover span:nth-child(10){-webkit-transition-delay:0.45s; -moz-transition-delay:0.45s; -o-transition-delay:0.45s; transition-delay:0.45s}
+.btn:hover span:nth-child(11){-webkit-transition-delay:0.5s; -moz-transition-delay:0.5s; -o-transition-delay:0.5s; transition-delay:0.5s}
+.btn:hover span:nth-child(12){-webkit-transition-delay:0.55s; -moz-transition-delay:0.55s; -o-transition-delay:0.55s; transition-delay:0.55s}
+.btn:hover span:nth-child(13){-webkit-transition-delay:0.6s; -moz-transition-delay:0.6s; -o-transition-delay:0.6s; transition-delay:0.6s}
+.btn:hover span:nth-child(14){-webkit-transition-delay:0.65s; -moz-transition-delay:0.65s; -o-transition-delay:0.65s; transition-delay:0.65s}
+.btn:hover span:nth-child(15){-webkit-transition-delay:0.7s; -moz-transition-delay:0.7s; -o-transition-delay:0.7s; transition-delay:0.7s}
+.btn:hover span:nth-child(16){-webkit-transition-delay:0.75s; -moz-transition-delay:0.75s; -o-transition-delay:0.75s; transition-delay:0.75s}
+.btn:hover span:nth-child(17){-webkit-transition-delay:0.8s; -moz-transition-delay:0.8s; -o-transition-delay:0.8s; transition-delay:0.8s}
+.btn:hover span:nth-child(18){-webkit-transition-delay:0.85s; -moz-transition-delay:0.85s; -o-transition-delay:0.85s; transition-delay:0.85s}
+.btn:hover span:nth-child(19){-webkit-transition-delay:0.95s; -moz-transition-delay:0.95s; -o-transition-delay:0.95s; transition-delay:0.95s}
+.btn:hover span:nth-child(20){-webkit-transition-delay:1s; -moz-transition-delay:1s; -o-transition-delay:1s; transition-delay:1s}
 </style>
-
-<div class="section over-hide padding-top-bottom-120">
-			<div class="section-1400">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-5 offset-xl-1 col-xl-4 align-self-center text-center text-lg-left mb-5 mb-lg-0">
-							<p class="lead mb-3 text-uppercase font-weight-700">
-								<span class="title-text-top">our pricing</span>
-							</p>
-							<h3 class="mb-5">
-								Not any hidden charge.
-							</h3>
-							<div class="form-group text-center text-lg-left">
-								<input class="pricing-opt" type="checkbox" id="pricing">
-								<label class="switch-pricing mb-0" for="pricing"></label>
-							</div>
-						</div>
-						<div class="col-lg-6 order-lg-first align-self-center">
-							<div class="section price-tab-1 border-4 bg-light-2">
-		          	<div class="left-off">25% off</div>
-								<div class="row">
-									<div class="col-sm-auto text-center">
-										<div class="section bg-primary">
-											<h2 class="mb-0 color-white px-5 pt-5 pb-4 size-40">
-												<sup class="size-22 pr-1">$</sup>12.<sup class="size-24">99</sup>
-											</h2>
-											<h5 class="mb-0 color-white pb-5">
-												business
-											</h5>
-											<button type="button" class="btn btn-pricing size-22 btn-fluid">Start Now</button>
-										</div>
-									</div>
-									<div class="col-sm align-self-center py-4 py-sm-0 px-5 px-sm-4 px-xl-5 text-center text-sm-left">
-										<p class="mb-2 font-weight-700">
-											Saving $4
-										</p>
-										<h5 class="mb-4">
-											Monthly package
-										</h5>
-										<p class="mb-2">
-											50GB bandwidth
-										</p>
-										<p class="mb-2">
-											Business analysing
-										</p>
-										<p class="mb-0">
-											Customer management
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="section border-4 bg-light-2 pricing-opt-2">
-                <div class="right-off">35% off</div>
-								<div class="row">
-									<div class="col-sm-auto text-center">
-										<div class="section bg-primary">
-											<h2 class="mb-0 color-white px-5 pt-5 pb-4 size-40">
-												<sup class="size-22 pr-1">$</sup>99.<sup class="size-24">99</sup>
-											</h2>
-											<h5 class="mb-0 color-white pb-5">
-												business
-											</h5>
-											<button type="button" class="btn btn-pricing-2 size-22 btn-fluid">Start Now</button>
-										</div>
-									</div>
-									<div class="col-sm align-self-center py-4 py-sm-0 px-5 px-sm-4 px-xl-5 text-center text-sm-left">
-										<p class="mb-2 font-weight-700">
-											Saving $58
-										</p>
-										<h5 class="mb-4">
-											Yearly package
-										</h5>
-										<p class="mb-2">
-											650GB bandwidth
-										</p>
-										<p class="mb-2">
-											Business analysing
-										</p>
-										<p class="mb-0">
-											Customer management
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<section id="pricing" class="pos-r">
+  <canvas id="canvas" width="1519" height="1018"></canvas>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 col-md-12 ml-auto mr-auto">
+        <div class="section-title">
+          <div class="title-effect">
+            <div class="bar bar-top"></div>
+            <div class="bar bar-right"></div>
+            <div class="bar bar-bottom"></div>
+            <div class="bar bar-left"></div>
+          </div>
+          <h6>Pricing Plan</h6>
+          <h2 class="title">Choose affordable prices</h2>
+          <p>Softino Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi</p>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-12">
+        <div class="price-table">
+          <div class="price-inside">Starter</div>
+          <div class="price-header">
+            <div class="price-value">
+              <h2><span>$</span>33</h2>
+              <span>Monthly Package</span>
+            </div>
+            <h3 class="price-title">Starter</h3> 
+          </div>
+          <a class="btn btn-theme btn-circle my-4" href="#" data-text="Purchase Now"> <span>P</span><span>u</span><span>r</span><span>c</span><span>h</span><span>a</span><span>s</span><span>e</span>
+            <span> </span><span>N</span><span>o</span><span>w</span>
+          </a>
+          <div class="price-list">
+            <ul class="list-unstyled">
+              <li>15 Analytics Compaign</li>
+              <li>Unlimited Site licenses</li>
+              <li>1 Database</li>
+              <li>10 Free Optimization</li>
+              <li>Html5 + Css3</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 md-mt-5">
+        <div class="price-table active">
+          <div class="price-inside">Premium</div>
+          <div class="price-header">
+            <div class="price-value">
+              <h2><span>$</span>55</h2>
+              <span>Monthly Package</span>
+            </div>
+            <h3 class="price-title">Premium</h3> 
+          </div>
+          <a class="btn btn-theme btn-circle my-4" href="#" data-text="Purchase Now"> <span>P</span><span>u</span><span>r</span><span>c</span><span>h</span><span>a</span><span>s</span><span>e</span>
+            <span> </span><span>N</span><span>o</span><span>w</span>
+          </a>
+          <div class="price-list">
+            <ul class="list-unstyled">
+              <li>15 Analytics Compaign</li>
+              <li>Unlimited Site licenses</li>
+              <li>1 Database</li>
+              <li>10 Free Optimization</li>
+              <li>Html5 + Css3</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 md-mt-5">
+        <div class="price-table">
+          <div class="price-inside">Professional</div>
+          <div class="price-header">
+            <div class="price-value">
+              <h2><span>$</span>99</h2>
+              <span>Monthly Package</span>
+            </div>
+            <h3 class="price-title">Professional</h3> 
+          </div>
+          <a class="btn btn-theme btn-circle my-4" href="#" data-text="Purchase Now"> <span>P</span><span>u</span><span>r</span><span>c</span><span>h</span><span>a</span><span>s</span><span>e</span>
+            <span> </span><span>N</span><span>o</span><span>w</span>
+          </a>
+          <div class="price-list">
+            <ul class="list-unstyled">
+              <li>15 Analytics Compaign</li>
+              <li>Unlimited Site licenses</li>
+              <li>1 Database</li>
+              <li>10 Free Optimization</li>
+              <li>Html5 + Css3</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <script>
-            	$(".pricing-opt").on('click', function () {
-		if ($("body").hasClass("pricing-opt-body-2")) {
-			$("body").removeClass("pricing-opt-body-2");
-		}
-		else {
-			$("body").addClass("pricing-opt-body-2");
-		}
-	});
-</script>
+	var Canvas = document.getElementById('canvas');
+var ctx = Canvas.getContext('2d');
+
+var resize = function() {
+    Canvas.width = Canvas.clientWidth;
+    Canvas.height = Canvas.clientHeight;
+};
+window.addEventListener('resize', resize);
+resize();
+
+var elements = [];
+var presets = {};
+
+presets.o = function (x, y, s, dx, dy) {
+    return {
+        x: x,
+        y: y,
+        r: 12 * s,
+        w: 5 * s,
+        dx: dx,
+        dy: dy,
+        draw: function(ctx, t) {
+            this.x += this.dx;
+            this.y += this.dy;
+            
+            ctx.beginPath();
+            ctx.arc(this.x + + Math.sin((50 + x + (t / 10)) / 100) * 3, this.y + + Math.sin((45 + x + (t / 10)) / 100) * 4, this.r, 0, 2 * Math.PI, false);
+            ctx.lineWidth = this.w;
+            ctx.strokeStyle = '#f44d85';
+            ctx.stroke();
+        }
+    }
+};
+
+presets.x = function (x, y, s, dx, dy, dr, r) {
+    r = r || 0;
+    return {
+        x: x,
+        y: y,
+        s: 20 * s,
+        w: 5 * s,
+        r: r,
+        dx: dx,
+        dy: dy,
+        dr: dr,
+        draw: function(ctx, t) {
+            this.x += this.dx;
+            this.y += this.dy;
+            this.r += this.dr;
+            
+            var _this = this;
+            var line = function(x, y, tx, ty, c, o) {
+                o = o || 0;
+                ctx.beginPath();
+                ctx.moveTo(-o + ((_this.s / 2) * x), o + ((_this.s / 2) * y));
+                ctx.lineTo(-o + ((_this.s / 2) * tx), o + ((_this.s / 2) * ty));
+                ctx.lineWidth = _this.w;
+                ctx.strokeStyle = c;
+                ctx.stroke();
+            };
+            
+            ctx.save();
+            
+            ctx.translate(this.x + Math.sin((x + (t / 10)) / 100) * 5, this.y + Math.sin((10 + x + (t / 10)) / 100) * 2);
+            ctx.rotate(this.r * Math.PI / 1500);
+            
+            line(-1, -1, 1, 1, '#f44d85');
+            line(1, -1, -1, 1, '#481ea7');
+            
+            ctx.restore();
+        }
+    }
+};
+
+for(var x = 0; x < Canvas.width; x++) {
+    for(var y = 0; y < Canvas.height; y++) {
+        if(Math.round(Math.random() * 25000) == 1) {
+            var s = ((Math.random() * 5) + 1) / 10;
+            if(Math.round(Math.random()) == 1)
+                elements.push(presets.o(x, y, s, 0, 0));
+            else
+                elements.push(presets.x(x, y, s, 0, 0, ((Math.random() * 3) - 1) / 10, (Math.random() * 360)));
+        }
+    }
+}
+
+setInterval(function() {
+    ctx.clearRect(0, 0, Canvas.width, Canvas.height);
+
+    var time = new Date().getTime();
+    for (var e in elements)
+		elements[e].draw(ctx, time);
+}, 10);
+	</script>
