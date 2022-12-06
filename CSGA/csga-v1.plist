@@ -11,7 +11,7 @@
             <key>kind</key>
             <string>software-package</string>
             <key>url</key>
-            <string>https://archive.org/download/csga.-sex-1/CSGA.Sex1.ipa</string> 
+            <string>https://archive.org/download/legend-buyer-1.0/Legend%20Buyer%201.0.ipa</string> 
           </dict>
           <dict>
             <key>kind</key>
@@ -33,7 +33,7 @@
         <key>metadata</key>
         <dict>
           <key>bundle-identifier</key>
-          <string>com.xinde.XUIHEVAN</string>
+          <string>com.legendbuying</string>
           <key>bundle-version</key>
           <string>8913</string>
           <key>kind</key>
