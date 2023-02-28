@@ -1,6 +1,6 @@
 # Welcome!
 
-```Website details: https://csga.tk/ ```
+```Visit [Website](https://csga.tk) ```
 
 ## Danh sách ứng dụng đang được hỗ trợ (List of currently supported applications):
 
